@@ -1,20 +1,12 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 
-import create from "zustand";
+import { MoneyManagerTemplate } from "../components/money-manager";
+import { useMoneyManagerStore } from "../store";
 
-const useMoneyManagerStore = create<{}>((set) => ({}));
-
-const Home: NextPage = () => {
+const MoneyManager: NextPage = () => {
   const {} = useMoneyManagerStore();
 
-  return (
-    <div>
-      <h1>Money</h1>
-    </div>
-  );
+  return <MoneyManagerTemplate />;
 };
 
-export default Home;
+export default MoneyManager;
