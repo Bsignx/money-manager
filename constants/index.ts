@@ -1,11 +1,11 @@
 const TRANSACTION_TYPE_OPTIONS = [
   {
     optionId: "INCOME",
-    displayText: "Income",
+    displayText: "income",
   },
   {
     optionId: "EXPENSE",
-    displayText: "Expense",
+    displayText: "expense",
   },
 ];
 

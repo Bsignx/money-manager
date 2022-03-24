@@ -4,8 +4,6 @@ import { MoneyManagerTemplate } from "../components/money-manager";
 import { useMoneyManagerStore } from "../store";
 
 const MoneyManager: NextPage = () => {
-  const {} = useMoneyManagerStore();
-
   return <MoneyManagerTemplate />;
 };
 
